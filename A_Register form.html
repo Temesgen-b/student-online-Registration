@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Student Registration Form </title>
+    <link rel="stylesheet" href="Design(Stylesheet)/Register form.css">
+    <script>
+        function myfun()
+        {
+            var guidebutton=document.getElementById("butn");
+            var guidelines=document.getElementById('guidelines');
+            if(guidebutton.value=="Click to see guidelines")
+            {
+            
+                guidelines.style.display='block';
+                guidebutton.value='Click to Hide guidelines';
+            }
+            else if(guidebutton.value=="Click to Hide guidelines")
+            {
+        
+                guidelines.style.display='none';
+                guidebutton.value='Click to see guidelines';
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <section class="registration-container">
+        <h2> Registration </h2>
+        <section class="details-section">
+            <form action="form-error-handling.php" class="registration-form"  method="post" >
+                <!-- Personal Details Section -->
+                <h4> Personal Details </h4>
+                <section class="personal-details">
+
+                    <div class="three-details-item">
+                        <label for="type_of_Application">
+                            <p>type of Application </p>
+                            <select name="Schedule" id=""  required >
+                                <option value="REGULAR">REGULAR</option>
+                                <option value="EXTENSION">EXTENSION</option>
+                                <option value="WEEKEND">WEEKEND</option>
+                            </select>
+                        </label>
+
+                    </div>
+                    
+                    <div class="three-details-item">
+                        <label for="first_Name">
+                            <p>first Name</p>
+                            <input type="text" name="fname"  placeholder="Enter your name" >
+                        </label>
+                       
+                        <label for="last_Name">
+                            <p> last Name </p>
+                            <input type="text" name="lname" placeholder="Enter father name" required>
+                        </label>
+                        <label for="sex">
+                            <p> sex</p> 
+                           <select name="sex" style="width: 157px;" required>
+                              <option value="Male">Male</option>
+                              <option value="Female">Female</option>
+                            </select>
+                          </label>
+                    </div>
+                    <div class="three-details-item">
+                        <label for="Age" >
+                            <p>Age</p>
+                            <input type="number" name="age"  placeholder="Enter Age number" required>
+                        </label>
+
+                        <label for="Citizenship">
+                            <p>Citizenship</p>
+                            <input type="text" name="Citizenship"  placeholder="Enter your Citizenship" required>
+                        </label>
+                       
+                        <label for="DOB">
+                            <p>Date of Birth</p>
+                            <input type="date" name="dob" placeholder="Enter your DOB" required>
+                        </label>
+                    </div>
+                    <!--<form action="https://formsubmit.co/temesgenb439@gmail.com"> -->
+                    <div class="three-details-item">
+                        <label for="Email">
+                            <p>Email</p>
+                            <input type="email" name="email"  placeholder="Enter your email" required>
+                        </label>
+                       <!-- </form> -->
+                        <label for="Mobile">
+                            <p>Mobile Number</p>
+                            <input type="number" name="Mob"  placeholder="Enter Mobile Number" required>
+                        </label>
+                        <label for="Occupation">
+                            <p>occupation</p>
+                            <select name="occupation" required>
+                                <option value="ICT WDDBA">ICT WDDBA</option>
+                                <option value="ICT HNS">ICT HNS</option>
+                        
+                        
+                                <option value="AUTOMOTIVE Mechanics">AUTOMOTIVE Mechanics</option>
+                                <option value="AUTOMOTIVE Electirical">AUTOMOTIVE Electirical </option>
+                                
+                        
+                                <option value="Manufacturing Machining">Manufacturing Machining</option>
+                                <option value="Manufacturing welding">Manufacturing welding</option>
+                               
+                        
+                                <option value="Wood work">Wood work</option>
+
+                                <option value="Electronic Equipment servicing">Electronic Equipment servicing</option>
+                                <option value="industrial electrical control Technology">industrial electrical control Technology </option>
+                        
+                                <option value="(UAMS) Animal Production">(UAMS) Animal Production</option>
+                                <option value="">(UAMS) Greenery and Landscape development</option>
+
+                                <option value="Business  Accounting and finance">Business  Accounting and finance</option>
+                                <option value="Business  Marketing and  sales Mangment">Business  Marketing and  sales Mangment</option>
+                                <option value="Business  Secretarial  and office adminstration">Business  Secretarial  and office adminstration</option>
+                             
+                                <option value="Hotel and Tourism  Bakery and Pastry Production ">Hotel and Tourism  Bakery and Pastry Production </option>
+                                <option value="Culinary Art">Culinary Art</option>
+                                <option value="food and beverage service"> food and beverage service</option> 
+                                <option value="front office service"> front office service </option>
+                                <option value="housekeeping and laundary service">  housekeeping and laundary service</option>
+                                <option value=" Tour guide"> Tour guide</option> 
+                                <option value=" hair dressing ">  hair dressing </option> 
+
+                                <option value="Leather product  foot wear production">Leather product  foot wear production </option>
+                                <option value="Leather  garment and good production">Leather  garment and good production </option>
+
+
+                                <option value="construction technology ">  construction technology </option>
+                                <option value="building electrical  installation">  building electrical  installation  </option>
+                                <option value="Plumbing installation">  Plumbing installation  </option>
+                                <option value="stractural  construction">  stractural  construction </option>
+                                <option value="road  construction& maintenance">  road  construction& maintenance </option>
+                                
+
+                            </select>
+                        </label>
+                    </div>
+                    
+                    <div class="three-details-item">
+                        <label for="Level" >
+                            <p> Level</p>
+                            <select name="level" style="width: 157px;" required >
+                                <option value=" Level 1">1</option>
+                                <option value=" Level 2">2</option>
+                                <option value=" Level 3">3</option>
+                                <option value=" Level 4">4</option>
+                                <option value=" Level 5">5</option>
+                               </select>
+                        </label>
+
+                        <label for="Physhical_dis">
+                            <p>  Physhical Disability (If)</p>
+                            <select name=" phy_dis"  style="width: 157px;" required >
+                                <option value="seen">seen</option>
+                                <option value="hear">hear</option>
+                        
+                                <option value="speek">speek</option>
+                                <option value="seen and speek">seen and speek</option>
+                        
+                                <option value="other">other </option>
+                                <option value="no"> no </option>
+                        
+                            </select> <br>
+                        </label>
+
+                        <!--<label for="address">
+                            <p> Address </p>
+                            <input type="text" name="address" id="address" placeholder="Enter your Address">
+                        </label> -->
+                    </div>
+                </section>
+
+                <hr>
+
+                <!-- Identity Details Section -->
+                <h4>place of brith </h4>
+                <section class="identity-details">
+                    <div class="three-details-item">
+
+                        <label for="City">
+                            <p> City  </p>
+                            <input type="text" name="brith_city" placeholder="Enter City/Region " required>
+                        </label>
+
+
+
+                        <label for="Sub_city ">
+                            <p> Sub-city/Zone  </p>
+                            <select name="sub_city"  style="width: 157px;" required>
+                                <option value="yeka">yeka</option>
+                                <option value="bole">bole</option>
+                                <option value="lemikura">lemikura</option>
+
+                                <option value="Addis Ketema">Addis Ketema </option>
+                                <option value="Arada">Arada</option>
+                                <option value="Lideta">Lideta</option>
+
+                                <option value="Gullele">Gullele</option>
+                                <option value="Akaki Kaliti ">Akaki Kaliti</option>
+                                <option value="lemikura">lemikura</option>
+
+                                    
+                                <option value="Kirkos  ">Kirkos </option>
+                                <option value="Kolfe Keranio">Kolfe Keranio</option>
+
+                            </select> 
+                        </label>
+
+                        <label for="Woreda">
+                            <p> Woreda</p>
+                            <input type="text" name="woreda" 
+                                placeholder="Enter your Woreda " required>
+                        </label>
+                       
+                    </div>
+                </section> 
+                <hr>
+                <!-- Identity current address -->
+                <h4> current address </h4>
+                <section class="identity-details">
+                    <div class="three-details-item">
+
+                        <label for="current_City ">
+                            <p> City  </p>
+                            <input type="text" name="current_City"  placeholder="Enter City/Region " required>
+                        </label>
+
+                        <label for="Current_Sub_city ">
+                            <p> Sub-city/Zone  </p>
+                            <select name="current_Sub_city"  style="width: 157px;" required>
+                                <option value="yeka">yeka</option>
+                                <option value="bole">bole</option>
+                                <option value="lemikura">lemikura</option>
+
+                                <option value="Addis Ketema">Addis Ketema </option>
+                                <option value="Arada">Arada</option>
+                                <option value="Lideta">Lideta</option>
+
+                                <option value="Gullele">Gullele</option>
+                                <option value="Akaki Kaliti ">Akaki Kaliti</option>
+                                <option value="lemikura">lemikura</option>
+
+                                <option value="Kirkos  ">Kirkos </option>
+                                <option value="Kolfe Keranio">Kolfe Keranio</option>
+
+
+                            </select> 
+                        </label>
+
+                        <label for="current_Woreda">
+                            <p> Woreda</p>
+                            <input type="text" name="current_Woreda" id=" Woreda"
+                                placeholder="Enter ur Woreda " required>
+                        </label>
+
+                    </div>
+                </section>
+                <hr>
+                <!-- educational background-->
+                <h2>educational background</h2>
+                <h4>  secondary school attendance </h4>
+                <section class="identity-details">
+                    <div class="three-details-item">
+
+                        <label for="Name_of_school  ">
+                            <p> Name of school </p>
+                            <input type="text" name="names_of_chool" 
+                            placeholder="Enter ur school name" required>
+                        </label>
+
+                        <label for="Town">
+                            <p> Town</p>
+                            <input type="text" name="town" 
+                                placeholder="Enter ur Town " required>
+                        </label>
+
+                        <label for="second_Year_of_attend   ">
+                            <p> Year of attend   </p>
+                            <input type="date" name="second_year_attendance"  placeholder="Enter Year of attend   " required>
+                        </label>
+
+                    </div>
+
+                    <div class="three-details-item">
+                        <label for="Last_gread_compleated:">
+                            <p>Last gread compleated:</p>
+                            <input type="text" name="gread_compleated"  placeholder="Enter your grade" required>
+                        </label> 
+
+                        
+                    </div>
+
+                </section>
+
+                <hr>
+                <!--ESLCE/EGSEC INFORMATION-->
+                <h2>ESLCE/EGSEC INFORMATION</h2>
+                <h4> Priparatory school attendance</h4>
+                <section class="identity-details">
+                    <div class="three-details-item">
+
+                        <label for="streem">
+                            <p>  streem: </p>
+                            <select name="streem" style="width: 157px;" required>
+                             <option value="Social">  Social</a> </option>
+                             <option value="Natural">Natural</option>
+                            </select>
+                        </label>
+
+                       
+                        <label for="prip_Year_of_attend" style="width: 157px;">
+                            <p> Year of attend   </p>
+                            <input type="date" name="Priparatory_year_of_attendance"  placeholder="Enter Year of attend   " required >
+                        </label>
+
+                        <label for="Civic">
+                            <p>  Civic</p>
+                            <input type="number" name="Civ" 
+                                placeholder="Civic result here" required>
+                        </label>
+
+                    </div>
+                    <div class="three-details-item">
+
+
+                        <label for="english">
+                            <p>  English</p>
+                            <input type="number" name="eng" 
+                                placeholder="english result here" required>
+                        </label>
+
+                        <label for="Maths">
+                            <p>  Maths</p>
+                            <input type="number" name="mat" 
+                                placeholder="Maths result here" required>
+                        </label>
+
+                        <label for="physics">
+                            <p>  physics</p>
+                            <input type="number" name="phy"
+                                placeholder="physics result here" >
+                        </label>
+
+                    </div>  
+
+                    <div class="three-details-item">
+                        <label for="chemistry">
+                            <p>chemistry</p>
+                            <input type="text" name="chemo"  placeholder="chemistry result here"" >
+                        </label> 
+
+                        <label for="Biology">
+                            <p>  Biology</p>
+                            <input type="text" name="bio" 
+                                placeholder="Biology result here" >
+                        </label>
+
+                        <label for="Aptiude">
+                            <p>  Aptiude</p>
+                            <input type="text" name="appt" 
+                                placeholder="Aptiude result here" required>
+                        </label>
+
+                    </div>   
+                    <div class="three-details-item">
+
+                    </div>
+
+                    <hr> 
+                    <input type="button" class="btn btn-light form-control" onClick="myfun()" id="butn" value="for  Social Student" ">
+                    <h4> for  Social Student</h4>
+                   <section class="identity-details">
+                    <div class="three-details-item"  id="guidelines">
+
+                        <label for="Economics">
+                            <p>  Economics</p>
+                            <input type="number" name="econ" 
+                                placeholder="Economics result here">
+                        </label>
+
+                        <label for="Geography">
+                            <p>  Geography</p>
+                            <input type="number" name="Geo" 
+                                placeholder="Geography result here">
+                        </label>
+
+                        <label for="History">
+                            <p>  History</p>
+                            <input type="number" name="Hist" 
+                                placeholder="History result here">
+                        </label>
+                     
+
+                    </div> <!-- 
+                    <div class="three-details-item">
+                        <label for="GPA">
+                            <p>  G.P.A</p>
+                            <input type="number" name="gpa" 
+                                placeholder="G.P.A result here" required>
+                        </label> 
+
+
+                    </div> -->
+                </section> 
+
+                  <hr> 
+                    <h4> insert document file </h4>
+                   <section class="identity-details">
+                        <div class="three-details-item">
+                            <head>
+                                <style>
+                                    #Upload{
+                                            border: none;
+                                            background-color: #4070f4;
+                                            color: white;
+                                            padding: .3rem 1rem;
+                                            display: block;
+                                       
+                                            margin: .6rem auto;
+                                            border-radius: 2rem;
+                                            font-size: 1.1rem;
+                                            margin-left: 70%;
+                                        } 
+                                </style>
+                            </head>
+                             <form action="upload.php" method="post" enctype="multipart/form-data">
+                                <label for=""><p>GSLCE_result</p>
+                                <input type="file" name="fileToUpload" id="fileToUpload" required > <br> <br>  <br>
+                                <br>
+                              <input type="submit" value="submit recored" name="submit"  id="Upload"> 
+                                <!--<a href="fetch.php">go to </a> -->
+                            </label>
+                      
+
+                            </form>
+
+                        
+                              
+                              
+                             
+    
+    
+                            <label for="GSLCE_result">     
+                                <p>GPA</p>
+                                <input type="do" name="GSLCE_result"   
+                                    placeholder="GSLCEresult here">
+                                   <!--  <input type="file" id="docFile" name="docFile" accept=".doc, .docx">-->
+                            </label> 
+
+                            
+                        </div>
+                   </section>
+
+
+                </section>
+                <!--<button class="submit-btn"> Submit </button> -->
+                <button class="submit-btn"> <a href="Home.html">go to home</a>  </button>
+            </form> 
+
+
+
+            
+            </form> 
+
+        </section>
+    </section>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
