@@ -50,3 +50,16 @@ img {
     padding: 0 3rem;
   }
 }
+.school_logo {
+  background-color: var(--primary);
+  text-align: center;
+  color: var(--white);
+  padding: 0.5rem;
+  height: 80px;
+}
+.school_logo img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  float: left;
+}
