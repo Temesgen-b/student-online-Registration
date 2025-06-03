@@ -195,4 +195,55 @@ img {
     bottom: 0;
     right: -5%;
     height: 90%;
+} 
+/*footer*/
+footer {
+  background-color: var(--black); 
+  color: var(--white);           
+  padding: 40px 20px;
+  font-family: sans-serif;
+}
+
+.footer_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.col {
+  list-style: none;
+  flex: 1 1 200px; 
+  margin: 20px;
+}
+
+.col h4 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.col h4::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 2px;
+  background: #f39c12; 
+  margin-top: 5px;
+}
+
+.col li {
+  margin-bottom: 10px;
+}
+
+.col a {
+  color: #bbb;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.col a:hover {
+  color: var(--primary);
 }
