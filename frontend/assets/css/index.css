@@ -46,6 +46,15 @@ img {
     margin: 0 auto;
 }
 
+.title {
+    font-weight: 400;
+    font-size: 42px;
+    text-align: center;
+    margin: 1rem;
+}
+.title span {
+    color: var(--primary);
+}
 @media only screen and (max-width: 1200px) {
     .container {
         padding: 0 3rem;
@@ -198,16 +207,6 @@ img {
 }
 
 /*gallery*/
-.gallery .title {
-    font-weight: 400;
-    font-size: 42px;
-    text-align: center;
-    margin: 1rem;
-}
-
-.title span {
-    color: var(--primary);
-}
 
 .gallery {
     margin: 2rem 0;
@@ -245,13 +244,6 @@ img {
 }
 
 /*event gallery */
-.event_gallery .title {
-    font-weight: 400;
-    font-size: 42px;
-    text-align: center;
-    margin: 1rem;
-}
-
 .event {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -307,9 +299,6 @@ img {
 }
 
 .popular_gallery .title {
-    font-weight: 400;
-    font-size: 42px;
-    text-align: center;
     margin: 2rem;
     padding: 1rem;
 }
