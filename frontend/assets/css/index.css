@@ -306,6 +306,43 @@ img {
     grid-row-end: 9;
 }
 
+.popular_gallery .title {
+    font-weight: 400;
+    font-size: 42px;
+    text-align: center;
+    margin: 2rem;
+    padding: 1rem;
+}
+
+.popular {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.popullar_card {
+    width: 290px;
+    overflow: hidden;
+}
+
+.popullar_card:hover {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.popullar_card img {
+    transition: all 500ms ease-in-out;
+}
+
+.popullar_card:hover img {
+    transform: scale(1.2);
+}
+
+.popullar_card p {
+    margin: 1rem;
+}
+
 /*footer*/
 footer {
     background-color: var(--black);
