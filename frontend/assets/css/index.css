@@ -239,9 +239,71 @@ img {
 
 .depart_Title {
     margin: 0.5rem;
-     font-size: 18px;
-     font-weight: 500;
+    font-size: 18px;
+    font-weight: 500;
 
+}
+
+/*event gallery */
+.event_gallery .title {
+    font-weight: 400;
+    font-size: 42px;
+    text-align: center;
+    margin: 1rem;
+}
+
+.event {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(8, 4vw);
+    gap: 2rem;
+}
+
+.event_img_cover {
+    overflow: hidden;
+}
+
+.event img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    transition: all 500ms ease-out;
+}
+
+.event .event1 img {
+    object-fit: fill;
+}
+
+.event img:hover {
+    transform: scale(1.2);
+}
+
+.event1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 9;
+}
+
+.event2 {
+    grid-column-start: 5;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 9;
+}
+
+.event3 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 5;
+}
+
+.event4 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 5;
+    grid-row-end: 9;
 }
 
 /*footer*/
