@@ -195,55 +195,103 @@ img {
     bottom: 0;
     right: -5%;
     height: 90%;
-} 
+}
+
+/*gallery*/
+.gallery .title {
+    font-weight: 400;
+    font-size: 42px;
+    text-align: center;
+    margin: 1rem;
+}
+
+.title span {
+    color: var(--primary);
+}
+
+.gallery {
+    margin: 2rem 0;
+}
+
+.container_gall {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 1rem;
+    transition: all 0.5s;
+}
+
+.img_cover {
+    width: 280px;
+    overflow: hidden;
+}
+
+.department_card img {
+    transition: all 500ms ease-in-out;
+}
+
+.department_card img:hover {
+    transform: scale(1.2);
+}
+
+.depart_Title {
+    margin: 0.5rem;
+     font-size: 18px;
+     font-weight: 500;
+
+}
+
 /*footer*/
 footer {
-  background-color: var(--black); 
-  color: var(--white);           
-  padding: 40px 20px;
-  font-family: sans-serif;
+    background-color: var(--black);
+    color: var(--white);
+    padding: 40px 20px;
+    font-family: sans-serif;
 }
 
 .footer_container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  max-width: 1200px;
-  margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
 }
 
 .col {
-  list-style: none;
-  flex: 1 1 200px; 
-  margin: 20px;
+    list-style: none;
+    flex: 1 1 200px;
+    margin: 20px;
 }
 
 .col h4 {
-  font-size: 18px;
-  margin-bottom: 15px;
-  text-transform: uppercase;
-  position: relative;
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    position: relative;
 }
 
 .col h4::after {
-  content: "";
-  display: block;
-  width: 40px;
-  height: 2px;
-  background: #f39c12; 
-  margin-top: 5px;
+    content: "";
+    display: block;
+    width: 40px;
+    height: 2px;
+    background: #f39c12;
+    margin-top: 5px;
 }
 
 .col li {
-  margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 .col a {
-  color: #bbb;
-  text-decoration: none;
-  transition: color 0.3s;
+    color: #bbb;
+    text-decoration: none;
+    transition: color 0.3s;
 }
 
 .col a:hover {
-  color: var(--primary);
+    color: var(--primary);
 }
